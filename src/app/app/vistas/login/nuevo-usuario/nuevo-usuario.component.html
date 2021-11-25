@@ -1,0 +1,21 @@
+<div Class="container">
+  <img  src="assets\img\Logo.png" alt="" width="180px" height="100px"/>
+
+  <div class="form-registro">
+    <form  method="post" >
+    <h3>Crear cuenta</h3>
+
+    <input class="elemento" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" [(ngModel)]="nombre" required/>
+    <input class="elemento" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido" [(ngModel)]="apellidos" required/>
+    <input class="elemento" type="text" name="email" id="email" placeholder="Ingrese su Correo"  [(ngModel)]="email"  required>
+    <input class="elemento" type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Ingrese Nombre Usuario" [(ngModel)]="nombreUsuario" required/>
+    <input class="elemento" type="password" name="password" id="password" placeholder="Ingrese su Contraseña" [(ngModel)]="password" required/>
+
+
+    <Button class="botons"  onclick= "onRegister()"  >Guardar </Button>
+
+    <p><a routerLink="/login" routerLinkActive="active" style="text-decoration: none">¿Ya tiene una Cuenta?</a></p>
+  </form>
+</div>
+
+</div>

@@ -1,0 +1,31 @@
+<div class="">
+  <app-menu></app-menu>
+  </div>
+
+<div class="">
+
+  <div class="form-inicio">
+    <img src="https://image.flaticon.com/icons/png/512/16/16363.png" width="50px" height="50px">
+      <h3>Inicia sesion</h3>
+      <form method="post">
+    <input [(ngModel)]="nombreUsuario" class="requisito" type="text"
+    name="nombreUsuario" id="nombreUsuario" placeholder="Ingrese Nombre Usuario"
+     required/>
+    <input [(ngModel)]="password" class="requisito" type="password"
+    name="password" id="password" placeholder="Ingrese su Contraseña"
+    required/>
+    <Button (click)='onLogin()' class="botons"
+    type="submit" >Registrar</Button>
+
+    <p><a routerLink="/NuevoUsuario"
+      routerLinkActive="active"
+      style="text-decoration: none;">¿No tiene una Cuenta? Registrese</a></p>
+    <p><a routerLink="/restablecer" routerLinkActive="active"
+      style="text-decoration: none;">¿Olvido su contraseña?</a></p>
+  </form>
+  </div>
+</div>
+
+<div class="footer">
+  <app-footer></app-footer>
+  </div>
